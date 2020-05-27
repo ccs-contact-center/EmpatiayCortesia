@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { CardBody, CardHeader, Row, Col } from 'reactstrap'
 import 'animate.css'
 import logo from '../../assets/img/brand/logo.png'
-import bienvenida from '../../assets/img/ImgClientesDificiles/bienvenida.jpg'
+import bienvenida from '../../assets/img/ImgEmpatia/bienvenida.jpg'
 
 class BienvenidaView extends Component {
   loading = () => (
@@ -27,12 +27,7 @@ class BienvenidaView extends Component {
                 <h1>Capacitación CCS</h1>
                 <h2>Empatía y Cortesía </h2>
                 <h3 className="centrado-fila">
-                  <div
-                    style={{ width: '120px' }}
-                    className="border-right-0 border border-danger "
-                  >
-                    Atencion a Clientes
-                  </div>
+                  
                 </h3>
               </div>
             </Col>
