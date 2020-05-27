@@ -12,18 +12,38 @@ export default {
     },
 
     {
-      name: '¿Qué es un cliente dificil?',
+      name: '¿QUE ES LA EMPATIA?',
       icon: 'icon-tag',
       
     },
 
     {
-      name: 'Tipos de clientes',
+      name: 'TIPOS DE EMPATIA',
       icon: 'icon-tag',
      
     },
     {
-      name: 'Algunos consejos',
+      name: 'RASGOS DE UN INDIVIDUO EMPATICO',
+      icon: 'icon-tag',
+     
+    },
+    {
+      name: 'DESARROLLO DE LA EMPATIA ',
+      icon: 'icon-tag',
+     
+    },
+    {
+      name: 'OBSTACULOS DE LA EMPATIA',
+      icon: 'icon-tag',
+     
+    },
+    {
+      name: 'MEJORAS DE LA EMPATIA',
+      icon: 'icon-tag',
+     
+    },
+    {
+      name: 'CONCLUCIÓN',
       icon: 'icon-tag',
      
     },
@@ -31,12 +51,6 @@ export default {
       name: 'EVALUACIÓN ',
       icon: 'icon-puzzle',
     
-    },
-
-   
-    {
-      name: 'DESPEDIDA',
-      icon: 'icon-tag',
     },
   ],
 }
