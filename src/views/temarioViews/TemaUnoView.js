@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { CardBody, CardHeader, Col, Row } from 'reactstrap'
-import Objetivo from '../../assets/img/ImgClientesDificiles/objetivo.jpg'
+
 
 class TemaUnoView extends Component {
   loading = () => (
@@ -11,46 +11,36 @@ class TemaUnoView extends Component {
     return (
       <div className="animated fadeIn">
         <CardHeader className="text-left">
-          <h3>¿Qué es un cliente dificil?</h3>
+          <h3>Empatía y Cortesía</h3>
         </CardHeader>
         <CardBody className="">
           <Row className="centrado-fila">
             <Col xs="12">
               <h2 className="animated zoomInUp delay-1s">
-                <b>¿Qué es un cliente dificil?</b>
+                <b>¿Qué es la empatía?</b>
               </h2>
             </Col>
-            <Col xs="12">
-              <Row className="">
-                <Col md="4" className="animated zoomInUp delay-2s">
-                  <p style={{ marginBottom: '0px' }}>
-                    <b>Cliente:</b>
-                  </p>
-                  <p className="text-justify">
-                    Persona que utiliza los servicios de un profesional o de una
-                    empresa, especialmente la que lo hace regularmente.Cliente:
-                    Persona que utiliza los servicios de un profesional o de una
-                    empresa, especialmente la que lo hace regularmente.
-                  </p>
-                </Col>
-                <Col md="4" className="animated zoomInUp delay-3s">
-                  <p style={{ marginBottom: '0px' }}>
-                    <b>Difícil:</b>
-                  </p>
-                  <p className="text-justify">
-                    Que, por su carácter nervioso, disconforme, rebelde, etc.,
-                    debe ser tratado con habilidad, inteligencia y esfuerzo.
-                  </p>
-                </Col>
-                <Col md="4" className="centrado-fila">
-                  <img
-                    src={Objetivo}
-                    style={{ width: 360 }}
-                    alt="Objetivo"
-                    className="img-fluid bordeImagen animated zoomInUp delay-4s"
-                  />
-                </Col>
-              </Row>
+            <Col md="12" className="animated zoomInUp delay-2s">
+              <p className="text-justify">
+                Todas las personas tienen valores que les ayudan a orientar sus
+                vidas. Los valores son muy importantes en la vida de las
+                personas y en el comportamiento de las personas; Orientan la
+                vida y marcan la personalidad.
+              </p>
+              <p className="text-justify">
+                La empatía nos permite establecer vínculos más sólidos y
+                positivos con los demás. Se define como la capacidad para
+                reconocer y comprender los sentimientos, ideas, conductas y
+                actitudes de los demás y entender las circunstancias que pueden
+                afectar a situaciones concretas.
+              </p>
+              <p className="text-justify">
+                Una diferencia de lo que se cree popularmente, la empatía no es
+                la capacidad de sentir lo que el otro siente. Si fuera así
+                estaríamos sufriendo altibajos emocionales durante todo el día.
+                <b>La empatía es lo que otro individuo siente y responde en
+                función</b>.
+              </p>
             </Col>
           </Row>
         </CardBody>
