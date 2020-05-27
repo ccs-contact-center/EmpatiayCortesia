@@ -40,59 +40,96 @@ class TemaCincoView extends Component {
               <Row className="centrado-fila mt-4">
                 <Col xs="8">
                   <Accordion>
-                    <div>
+                    <div className="bg-fondo-btn bordeAcordeon boderAcodeonEsquina">
                       <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        Click me!
+                        Paso 1: Practica la escucha activa .
                       </Accordion.Toggle>
                     </div>
 
-                    <Accordion.Collapse eventKey="0">
-                      <Card.Body>Hello! I'm the body</Card.Body>
-                    </Accordion.Collapse>
+                    <div className="bg-fondo-btn2 boderAcodeonEsquina">
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          <p style={{ marginBottom: '0px' }}>
+                            Consiste en prestar atención a los detalles para
+                            saber por qué el cliente está molesto y comprender
+                            la magnitud del problema.
+                          </p>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </div>
 
-                    <div>
+                    <div className="bg-fondo-btn bordeAcordeon boderAcodeonEsquina">
                       <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                        Click me!
+                        Paso 2: Ponte en el lugar del cliente.
                       </Accordion.Toggle>
                     </div>
 
-                    <Accordion.Collapse eventKey="1">
-                      <Card.Body>Hello! I'm another body</Card.Body>
-                    </Accordion.Collapse>
+                    <div className="bg-fondo-btn2 boderAcodeonEsquina">
+                      <Accordion.Collapse eventKey="1">
+                        <Card.Body>
+                          <p style={{ marginBottom: '0px' }}>
+                            Consiste en transmitir al cliente que comprende el
+                            problema como si estuvieras sucediendo a ti mismo.
+                          </p>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </div>
+
+                    <div className="bg-fondo-btn bordeAcordeon boderAcodeonEsquina">
+                      <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                        Paso 3: Expresa el deseo sincero de ayudar.
+                      </Accordion.Toggle>
+                    </div>
+
+                    <div className="bg-fondo-btn2 boderAcodeonEsquina">
+                      <Accordion.Collapse eventKey="2">
+                        <Card.Body>
+                          <p style={{ marginBottom: '0px' }}>
+                            Utiliza expresiones sencillas para que el cliente
+                            comprenda que se hace todo lo posible para resolver
+                            el problema.
+                          </p>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </div>
+
+                    <div className="bg-fondo-btn bordeAcordeon boderAcodeonEsquina">
+                      <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                        Paso 4: Mantente cortés y amable.
+                      </Accordion.Toggle>
+                    </div>
+
+                    <div className="bg-fondo-btn2 boderAcodeonEsquina">
+                      <Accordion.Collapse eventKey="3">
+                        <Card.Body>
+                          <p style={{ marginBottom: '0px' }}>
+                            Sin desconocer el enojo del cliente y sus motivos,
+                            para reorientar la conversación y mitigar su mal
+                            humor.
+                          </p>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </div>
+
+                    <div className="bg-fondo-btn bordeAcordeon boderAcodeonEsquina">
+                      <Accordion.Toggle as={Button} variant="link" eventKey="4" className="">
+                      Paso 5: Averigua para que no se preocupe por el cliente.
+                      </Accordion.Toggle>
+                    </div>
+
+                    <div className="bg-fondo-btn2 boderAcodeonEsquina">
+                      <Accordion.Collapse eventKey="4">
+                        <Card.Body>
+                          <p style={{ marginBottom: '0px' }}>
+                            Sin desconocer el enojo del cliente y sus motivos,
+                            para reorientar la conversación y mitigar su mal
+                            humor.
+                          </p>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </div>
                   </Accordion>
-                  <div>
-                    <p style={{ marginBottom: '0px' }}>
-                      <b>Características:</b>
-                    </p>
-                    <p className="text-justify">
-                      Se trata de personas con alta autoestima personal y
-                      profesional, que creen conocer todas las características
-                      del producto y la empresa. Buscan controlar la situación y
-                      la conversación.
-                    </p>
-                  </div>
-                  <div>
-                    <p style={{ marginBottom: '0px' }}>
-                      <b>Manera de atenderle:</b>
-                    </p>
-                    <p className="text-justify">
-                      Debemos atenderle aportando datos objetivos y hechos
-                      probados del producto o servicio que estamos ofreciendo.
-                      Escucharlo de forma activa, mostrando interés por sus
-                      palabras. Mostrar calma y tranquilidad.
-                    </p>
-                  </div>
-                  <div>
-                    <p style={{ marginBottom: '0px' }}>
-                      <b>Errores a evitar:</b>
-                    </p>
-                    <p className="text-justify">
-                      Resulta inútil tratar de demostrarle que está en un error.
-                      Tampoco debemos manifestar impaciencia o debilidad, ni
-                      interrumpir bruscamente la conversación, pues se sentirá
-                      ofendido.
-                    </p>
-                  </div>
+                 
                 </Col>
                 <Col xs="4" className="centrado-fila">
                   <img
