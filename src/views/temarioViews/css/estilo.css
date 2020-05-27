@@ -247,8 +247,31 @@ td,th{
 		  
 	  }
 
-	
+	  .globo1{ 
+		margin-top:0;
+		width:80px;
+		float:left;
+		left:36%; 
+		position:relative;
+		z-index:1;
+	}	
 	  
+.globoAbajo{
+	position:relative;
+	display: block;
+	border: 2px solid #000000 !important;
+	margin: 57px auto 10px auto; 
+	border-radius: 8px;
+	padding: 10px 15px 0 15px;
+	box-shadow: 2px 2px 4px #666666; 
+	-webkit-box-shadow: 2px 2px 4px #666666; 
+	-moz-box-shadow: 2px 2px 4px #666666;
+	background: -moz-linear-gradient(0deg, #EEEEEE, #FFFFFF, #FFFFFF);
+	background: -ms-linear-gradient(0deg, #EEEEEE, #FFFFFF, #FFFFFF);
+	background: -o-linear-gradient(0deg, #EEEEEE, #FFFFFF, #FFFFFF);
+	background: -webkit-linear-gradient(0deg, #EEEEEE, #FFFFFF, #FFFFFF);
+	background: linear-gradient(0deg, #EEEEEE, #FFFFFF, #FFFFFF);
+	}
 
 
 
