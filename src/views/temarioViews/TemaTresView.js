@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { CardBody, Col, Row, CardHeader } from 'reactstrap'
 import ReactPlayer from 'react-player'
-import dos from '../../assets/img/ImgEmpatia/dos.png'
+import tres from '../../assets/img/ImgEmpatia/tres.png'
 
 class TemaTresView extends Component {
   loading = () => (
@@ -55,10 +55,10 @@ class TemaTresView extends Component {
               className="mt-4 animated zoomInUp delay-4s centrado-fila"
             >
               <img
-                src={dos}
+                src={tres}
                 style={{ width: 360 }}
-                alt="dos"
-                className="img-fluid bordeImagen  animated  fadeInDown  delay-1s"
+                alt="tres"
+                className="img-fluid   animated  fadeInDown  delay-1s"
               />
             </Col>
           </Row>
