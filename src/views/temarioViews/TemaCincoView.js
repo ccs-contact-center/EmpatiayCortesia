@@ -136,7 +136,7 @@ class TemaCincoView extends Component {
                     src={cinco}
                     style={{ width: 350 }}
                     alt="escucha-activa.jpg"
-                    className="img-fluid bordeImagen  animated fadeInUpBig delay-1s  "
+                    className="img-fluid   animated fadeInUpBig delay-1s  "
                   />
                 </Col>
               </Row>
