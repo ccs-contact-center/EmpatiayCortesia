@@ -10,7 +10,7 @@ import TemaUnoView from './temarioViews/TemaUnoView'
 import TemaDosView from './temarioViews/TemaDosView'
 import TemaTresView from './temarioViews/TemaTresView'
 import TemaCincoView from './temarioViews/TemaCincoView'
-import DespedidaView from './temarioViews/DespedidaView'
+import TemaSeisView from './temarioViews/TemaSeisView'
 import Actividad1View from './temarioViews/Actividad1View'
 
 
@@ -50,7 +50,7 @@ class Inicio extends Component {
           ) : this.state.index === 5 ? (
             <TemaCincoView />
           ) : this.state.index === 6 ? (
-            <DespedidaView />
+            <TemaSeisView />
           ) : this.state.index === 7 ? (
             <Actividad1View />
           ) : null}
