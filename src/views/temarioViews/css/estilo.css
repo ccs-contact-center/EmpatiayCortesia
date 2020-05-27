@@ -24,6 +24,8 @@
 }
 
 
+
+
 .cajaA1{
 	border-bottom: solid 6px #c00327 !important;
 	border-top: solid 6px #c00327 !important;
@@ -273,7 +275,9 @@ td,th{
 	background: linear-gradient(0deg, #EEEEEE, #FFFFFF, #FFFFFF);
 	}
 
-
+.boderAcodeonEsquina{
+	border-radius:5px !important;
+}
 
 	 /* div{
 		border: solid 1px;
