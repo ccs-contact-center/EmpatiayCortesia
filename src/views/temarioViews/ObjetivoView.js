@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { CardBody, CardHeader, Col, Row } from 'reactstrap'
-import Objetivo from '../../assets/img/ImgClientesDificiles/objetivo.jpg'
+import Objetivo from '../../assets/img/ImgEmpatia/objetivo.png'
+import ReactPlayer from 'react-player'
 
 class ObjetivoView extends Component {
   loading = () => (
@@ -16,28 +17,34 @@ class ObjetivoView extends Component {
         <CardBody className="">
           <Row className="centrado-fila">
             <Col xs="12" sm="12" md="5" lg="5">
-              <div className="align-middle animated rubberBand delay-0s">
-                <p className="text-justify">
-                  El participante identificará a los principales tipos de
-                  clientes a los que les brinda atención de acuerdo a sus
-                  caracteristicas y reconocerá cuál es la mejor manera en la que
-                  se les puede brindar atención.El participante identificará a
-                  los principales tipos de clientes a los que les brinda
-                  atención de acuerdo a sus caracteristicas y reconocerá cuál es
-                  la mejor manera en la que se les puede brindar atención.
+              <div className="align-middle animated  fadeInDown  delay-0s">
+                <p className="text-justify globoAbajo">
+                  ¿Que tal? ¿Cómo estás? Que gusto volverte a ver por aquí, el
+                  día de ayer hoy tengo preparado para ti el curso de empatía y
+                  cortesía el cual es vital para tu día a día. ¡Veamos el
+                  siguiente video!
                 </p>
               </div>
             </Col>
-            <Col xs="12" sm="12" md="5" lg="4">
+            <Col xs="12" sm="12" className="centrado-fila">
               <img
                 src={Objetivo}
-                style={{ width: 360 }}
+                style={{ width: 160 }}
                 alt="Objetivo"
-                className="img-fluid bordeImagen animated rubberBand delay-1s"
+                className="img-fluid  animated  fadeInDown  delay-1s"
               />
             </Col>
-            <Col xs="12" sm="12" md="5" lg="4">
-              <h3 className="animated rubberBand delay-2s">
+            <Col
+              xs="12"
+              className="centrado-fila mt-4 animated  fadeInDown  delay-2s"
+            >
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=UB3nKCNUBB4"
+                controls={true}
+              />
+            </Col>
+            <Col xs="12" sm="12" className="mt-4 text-center">
+              <h3 className="animated  fadeInDown  delay-3s">
                 <b>¡COMENCEMOS!</b>
               </h3>
             </Col>
