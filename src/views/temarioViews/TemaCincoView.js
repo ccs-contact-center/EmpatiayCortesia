@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { CardBody, CardHeader, Col, Row } from 'reactstrap'
+import ReactPlayer from 'react-player'
+import cinco from '../../assets/img/ImgEmpatia/cinco.jpg'
+import { Card, Button } from 'react-bootstrap'
 
-import cinco from '../../assets/img/ImgClientesDificiles/cinco.png'
+import Accordion from 'react-bootstrap/Accordion'
 
 class TemaCincoView extends Component {
   loading = () => (
@@ -12,18 +15,51 @@ class TemaCincoView extends Component {
     return (
       <div className="animated fadeIn ">
         <CardHeader className="text-left">
-          <h3>Clientes Difíciles </h3>
+          <h3>Empatía y Cortesía</h3>
         </CardHeader>
         <CardBody className="">
           <Row>
             <Col xs="12">
-              <h2 className="animated fadeInDown">
-                <b>Cliente Orgulloso:</b>
+              <h2 className="animated fadeInDown delay-0s">
+                <b>Mejorando tu empatía</b>
               </h2>
+              <p className="animated fadeInDown delay-1s">
+                Podemos relizar mejoras a nuestra empatia, dale un vistazo al
+                siguiente enlace:
+              </p>
+
+              <div className="centrado-fila">
+                <ReactPlayer
+                  className="animated fadeInDown delay-2s mt-4"
+                  url="https://www.youtube.com/watch?v=3DEzlUbkFg8&feature=emb_logo"
+                  controls={true}
+                />
+              </div>
             </Col>
             <Col xs="12" className="  animated fadeInDown">
-              <Row className="centrado-fila">
+              <Row className="centrado-fila mt-4">
                 <Col xs="8">
+                  <Accordion>
+                    <div>
+                      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                        Click me!
+                      </Accordion.Toggle>
+                    </div>
+
+                    <Accordion.Collapse eventKey="0">
+                      <Card.Body>Hello! I'm the body</Card.Body>
+                    </Accordion.Collapse>
+
+                    <div>
+                      <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                        Click me!
+                      </Accordion.Toggle>
+                    </div>
+
+                    <Accordion.Collapse eventKey="1">
+                      <Card.Body>Hello! I'm another body</Card.Body>
+                    </Accordion.Collapse>
+                  </Accordion>
                   <div>
                     <p style={{ marginBottom: '0px' }}>
                       <b>Características:</b>
