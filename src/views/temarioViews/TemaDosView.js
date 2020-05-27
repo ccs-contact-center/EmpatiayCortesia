@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { CardBody, Col, Row, CardHeader } from 'reactstrap'
 
 import ReactPlayer from 'react-player'
-import atc01 from '../../assets/img/ImgClientesDificiles/atc01.mp4'
 
 class TemaDosView extends Component {
   loading = () => (
@@ -13,19 +12,35 @@ class TemaDosView extends Component {
     return (
       <div className="animated fadeIn ">
         <CardHeader className="text-left">
-          <h3>Tipos de clientes</h3>
+          <h3>Empatía y Cortesía</h3>
         </CardHeader>
         <CardBody className="">
           <Row className="">
-            <Col xs="12">
-
-            <h2><b>Tipos de clientes</b></h2>
+            <Col xs="12" className="animated zoomInUp delay-1s">
+              <h2>¿Por qué es importante la empatía?</h2>
             </Col>
-
-            <Col md="12" className="centrado-fila">
-              <div className=" centrado-fila" >
-              <ReactPlayer url={atc01}   controls={true} />
+            <Col md="12" className="centrado-fila animated zoomInUp delay-2s">
+              <div className=" centrado-fila">
+                <ReactPlayer
+                  url="https://www.youtube.com/watch?v=nYTrIcn4rjg"
+                  controls={true}
+                />
               </div>
+            </Col>
+            <Col md="12" className="mt-4 animated zoomInUp delay-3s">
+              <p>
+                {' '}
+                Empatizar con alguien es simplemente lograr que esa persona se
+                sienta comprendida. Si lo consigues, serás capaz de cambiar el
+                rumbo de una relación en un instante. El efecto de las neuronas
+                espejo provoca que su interlocutor se sienta se sienta en la
+                deuda con usted y se pueda entenderlo también se refleje sus
+                emociones o los dices que los entiendes lo que se siente, por lo
+                que, para los efectos de las relaciones personales con una
+                conexión emocional con su cliente y el estará dispuesto a
+                cooperar contigo en todo lo que te solicite facilitando asi tu
+                trabajo.
+              </p>
             </Col>
           </Row>
         </CardBody>
