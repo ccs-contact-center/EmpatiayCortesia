@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { CardBody, CardHeader, Col, Row } from 'reactstrap'
-
-import seis from '../../assets/img/ImgClientesDificiles/seis.jpg'
+import { CardBody, Col, Row, CardHeader } from 'reactstrap'
+import ReactPlayer from 'react-player'
+import conclusion from '../../assets/img/ImgEmpatia/conclusion.png'
 
 class TemaSeisView extends Component {
   loading = () => (
@@ -10,67 +10,61 @@ class TemaSeisView extends Component {
 
   render() {
     return (
-      <div className="animated fadeIn">
+      <div className="animated fadeIn ">
         <CardHeader className="text-left">
-          <h3>Clientes Difíciles </h3>
+          <h3>Empatía y Cortesía</h3>
         </CardHeader>
         <CardBody className="">
-          <Row className="centrado-fila">
-            <Col xs="12">
-              <h2 className="animated bounceInDown">
-                <b>Cliente metódico</b>
-              </h2>
+          <Row className="">
+            <Col xs="12" className="animated zoomInUp delay-1s">
+              <h2>¿Hasta donde puede llegar tu empatía?</h2>
+            </Col>
+            <Col md="12" className="centrado-fila animated zoomInUp delay-2s">
+              <div className=" centrado-fila">
+                <ReactPlayer
+                  url="https://www.youtube.com/watch?v=nfYPktsd9bs"
+                  controls={true}
+                />
+              </div>
+            </Col>
+            <Col md="12" className="mt-4 animated zoomInUp delay-3s">
+              <p>
+                Podemos concluir indicando que la empatía es una reacción física
+                de tu cuerpo pero también es una actitud.
+              </p>
+              <p style={{ marginBottom: '0px' }}>
+                <b>Conclusiones:</b>
+              </p>
+              <ul>
+                <li>Todos somos empáticos, lo traemos en el organismo.</li>
+                <li>
+                  {' '}
+                  Unos somos más empáticos que otros, pero podemos trabajar en
+                  ello.
+                </li>
+                <li>La cortesia es una acción y es una actitud.</li>
+                <li>
+                  {' '}
+                  La empatía y cortesía son necesarios no solo para mi trabajo,
+                  sino para la vida misma.
+                </li>
+                <li></li>
+              </ul>
+
+              <p>
+                Espero te haya gustado el curso pero sobre todo hayas aprendido
+                algo nuevo y lo apliques en todos los ambitos de tu vida.
+              </p>
             </Col>
             <Col
-              xs="10"
-              className="centrado-fila animated bounceInDown delay-1s"
+              md="12"
+              className="mt-4 animated zoomInUp delay-4s centrado-fila"
             >
-              <div>
-                <p style={{ marginBottom: '0px' }}>
-                  <b>Características:</b>
-                </p>
-                <p className="text-justify">
-                  Se trata de personas con alta autoestima personal y
-                  profesional, que creen conocer todas las características del
-                  producto y la empresa.
-                  <br />
-                  Buscan controlar la situación y la conversación.
-                </p>
-              </div>
-            </Col>
-            <Col xs="10" className="mt-3 animated bounceInDown delay-2s">
-              <div>
-                <p style={{ marginBottom: '0px' }}>
-                  <b>Manera de atenderle:</b>
-                </p>
-                <p className="text-justify">
-                  Debemos atenderle aportando datos objetivos y hechos probados
-                  del producto o servicio que estamos ofreciendo. Escucharlo de
-                  forma activa, mostrando interés por sus palabras. Mostrar
-                  calma y tranquilidad.
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row className="centrado-fila mt-3 animated bounceInDown delay-3s">
-            <Col xs="6" sm="4" md="4" className="centrado-fila">
-              <div>
-                <p style={{ marginBottom: '0px' }}>
-                  <b>Errores a evitar:</b>
-                </p>
-                <p className="text-justify">
-                  Para que la compra finalice con éxito no debemos mostrar
-                  nuestra inquietud, ante su indecisión, ni presionarlo para que
-                  se decante por el servicio o producto que ofrecemos.
-                </p>
-              </div>
-            </Col>
-            <Col xs="6" sm="6" md="4">
               <img
-                src={seis}
+                src={conclusion}
                 style={{ width: 360 }}
-                alt="Habilidades.png"
-                className="img-fluid bordeImagen animated lightSpeedIn delay-0s"
+                alt="conclusion"
+                className="img-fluid  animated  fadeInDown  delay-1s"
               />
             </Col>
           </Row>
