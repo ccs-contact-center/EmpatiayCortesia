@@ -11,7 +11,6 @@ import {
   Input,
 } from 'reactstrap'
 //import SweetAlert from 'sweetalert2-react'
-import Actividad1 from './componentsExtras/dragdrog'
 
 class Actividad1View extends Component {
   loading = () => (
