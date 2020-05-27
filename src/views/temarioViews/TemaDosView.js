@@ -50,7 +50,7 @@ class TemaDosView extends Component {
                 src={dos}
                 style={{ width: 360 }}
                 alt="dos"
-                className="img-fluid bordeImagen  animated  fadeInDown  delay-1s"
+                className="img-fluid   animated  fadeInDown  delay-1s"
               />
             </Col>
           </Row>
