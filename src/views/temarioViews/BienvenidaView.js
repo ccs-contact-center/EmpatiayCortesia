@@ -26,14 +26,14 @@ class BienvenidaView extends Component {
               <div className="animated  bounceInLeft delay-1s">
                 <h1>Capacitación CCS</h1>
                 <h2>Empatía y Cortesía </h2>
-                {/* <h3 className="centrado-fila">
+                <h3 className="centrado-fila">
                   <div
                     style={{ width: '120px' }}
                     className="border-right-0 border border-danger "
                   >
                     Atencion a Clientes
                   </div>
-                </h3> */}
+                </h3>
               </div>
             </Col>
             <Col md="6" sm="6" xs="12">
