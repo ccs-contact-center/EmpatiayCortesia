@@ -6,19 +6,13 @@ import withAuth from '../services/withAuth'
 import Navegador from './temarioViews/ComponentsNavTemari/Navegador'
 import BienvenidaView from './temarioViews/BienvenidaView'
 import ObjetivoView from './temarioViews/ObjetivoView'
-
 import TemaUnoView from './temarioViews/TemaUnoView'
 import TemaDosView from './temarioViews/TemaDosView'
 import TemaTresView from './temarioViews/TemaTresView'
-import TemaCuatroView from './temarioViews/TemaCuatroView'
 import TemaCincoView from './temarioViews/TemaCincoView'
-import TemaSeisView from './temarioViews/TemaSeisView'
-import TemaSieteView from './temarioViews/TemaSieteView'
-import TemaOchoView from './temarioViews/TemaOchoView'
-
 import DespedidaView from './temarioViews/DespedidaView'
 import Actividad1View from './temarioViews/Actividad1View'
-import Actividad2View from './temarioViews/Actividad2View'
+
 
 //import RecapitulacionView from './temarioViews/RecapitulacionView'
 
@@ -44,8 +38,7 @@ class Inicio extends Component {
       <div className="animated fadeIn">
         <Card>
           {this.state.index === 0 ? (
-             <ObjetivoView />
-            //<BienvenidaView />
+            <BienvenidaView />
           ) : this.state.index === 1 ? (
             <ObjetivoView />
           ) : this.state.index === 2 ? (
@@ -55,25 +48,15 @@ class Inicio extends Component {
           ) : this.state.index === 4 ? (
             <TemaTresView />
           ) : this.state.index === 5 ? (
-            <TemaCuatroView />
-          ) : this.state.index === 6 ? (
             <TemaCincoView />
-          ) : this.state.index === 7 ? (
-            <TemaSeisView />
-          ) : this.state.index === 8 ? (
-            <TemaSieteView />
-          ) : this.state.index === 9 ? (
-            <TemaOchoView />
-          ) : this.state.index === 10 ? (
-            <Actividad1View />
-          ) : this.state.index === 11 ? (
-            <Actividad2View />
-          ) : this.state.index === 12 ? (
+          ) : this.state.index === 6 ? (
             <DespedidaView />
+          ) : this.state.index === 7 ? (
+            <Actividad1View />
           ) : null}
           <br />
           <CardFooter>
-            <Navegador handleNavigation={this.setIndex} maxIndex={12} />
+            <Navegador handleNavigation={this.setIndex} maxIndex={7} />
           </CardFooter>
         </Card>
       </div>
