@@ -36,7 +36,7 @@ class BienvenidaView extends Component {
                 src={bienvenida}
                 style={{ width: 500 }}
                 alt="bienvenida"
-                className="img-fluid bordeImagen animated  bounceInRight delay-2s"
+                className="img-fluid  animated  bounceInRight delay-2s"
               />
             </Col>
           </Row>
