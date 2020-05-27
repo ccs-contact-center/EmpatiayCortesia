@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { CardBody, Col, Row, CardHeader } from 'reactstrap'
-
 import ReactPlayer from 'react-player'
+import dos from '../../assets/img/ImgEmpatia/dos.png'
 
 class TemaDosView extends Component {
   loading = () => (
@@ -41,6 +41,17 @@ class TemaDosView extends Component {
                 cooperar contigo en todo lo que te solicite facilitando asi tu
                 trabajo.
               </p>
+            </Col>
+            <Col
+              md="12"
+              className="mt-4 animated zoomInUp delay-4s centrado-fila"
+            >
+              <img
+                src={dos}
+                style={{ width: 360 }}
+                alt="dos"
+                className="img-fluid bordeImagen  animated  fadeInDown  delay-1s"
+              />
             </Col>
           </Row>
         </CardBody>
