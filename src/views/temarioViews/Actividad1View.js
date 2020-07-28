@@ -7,15 +7,47 @@ import {
   Button,
   Form,
   FormGroup,
-
   Input,
 } from 'reactstrap'
+import AuthService from '../../services/AuthService'
+import API_CCS from '../../services/API_CCS'
+const API = new API_CCS()
 //import SweetAlert from 'sweetalert2-react'
 
 class Actividad1View extends Component {
   loading = () => (
     <div className="animated fadeIn pt-1 text-center">Cargando...</div>
   )
+
+  constructor(props) {
+    super(props)
+    this.Auth = new AuthService()
+    this.state = {
+      pregunta1: '',
+      pregunta2: '',
+      pregunta3: '',
+      pregunta4: '',
+      pregunta5: '',
+      pregunta6: '',
+      id_ccs: this.Auth.getProfile().id_ccs,
+      form: 'Empatia',
+    }
+  }
+
+  onChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  async onSave(e) {
+    try {
+      var respuesta = await API.guardaActividad(this.state)
+      alert('Se guardo la actividad, con id: ' + respuesta[0].id)
+    } catch (err) {
+      console.log('loggea si hay un error')
+    }
+  }
 
   render() {
     return (
@@ -41,9 +73,11 @@ class Actividad1View extends Component {
                       <FormGroup check>
                         <Input
                           type="text"
-                          name="respuesta1"
-                          id="respuesta1"
+                          name="pregunta1"
+                          id="pregunta1"
                           placeholder="Tu respuesta"
+                          value={this.state.pregunta1}
+                          onChange={this.onChange.bind(this)}
                         />
                       </FormGroup>
                     </Col>
@@ -63,9 +97,11 @@ class Actividad1View extends Component {
                       <FormGroup check>
                         <Input
                           type="text"
-                          name="respuesta2"
-                          id="respuesta2"
+                          name="pregunta2"
+                          id="pregunta2"
                           placeholder="Tu respuesta"
+                          onChange={this.onChange.bind(this)}
+                          value={this.state.pregunta2}
                         />
                       </FormGroup>
                     </Col>
@@ -85,9 +121,11 @@ class Actividad1View extends Component {
                       <FormGroup check>
                         <Input
                           type="text"
-                          name="respuesta3"
-                          id="respuesta3"
+                          name="pregunta3"
+                          id="pregunta3"
                           placeholder="Tu respuesta"
+                          onChange={this.onChange.bind(this)}
+                          value={this.state.pregunta3}
                         />
                       </FormGroup>
                     </Col>
@@ -110,9 +148,11 @@ class Actividad1View extends Component {
                       <FormGroup check>
                         <Input
                           type="text"
-                          name="respuesta4"
-                          id="respuesta4"
+                          name="pregunta4"
+                          id="pregunta4"
                           placeholder="Tu respuesta"
+                          onChange={this.onChange.bind(this)}
+                          value={this.state.pregunta4}
                         />
                       </FormGroup>
                     </Col>
@@ -135,9 +175,11 @@ class Actividad1View extends Component {
                       <FormGroup check>
                         <Input
                           type="text"
-                          name="respuesta5"
-                          id="respuesta5"
+                          name="pregunta5"
+                          id="pregunta5"
                           placeholder="Tu respuesta"
+                          onChange={this.onChange.bind(this)}
+                          value={this.state.pregunta5}
                         />
                       </FormGroup>
                     </Col>
@@ -160,45 +202,24 @@ class Actividad1View extends Component {
                       <FormGroup check>
                         <Input
                           type="text"
-                          name="respuesta6"
-                          id="respuesta6"
+                          name="pregunta6"
+                          id="pregunta6"
                           placeholder="Tu respuesta"
+                          onChange={this.onChange.bind(this)}
+                          value={this.state.pregunta6}
                         />
                       </FormGroup>
                     </Col>
                   </FormGroup>
                 </div>
 
-                <div
-                  className="cajaA2 mt-3"
-                  style={{ backgroundColor: '#d5d4d8' }}
-                >
-                  <FormGroup tag="fieldset" row>
-                    <legend className="col-form-label ml-2">
-                      <b>8. ¿Por qué es importante la voz en tu trabajo?</b>{' '}
-                      <span style={{ color: 'red' }}>*</span>
-                    </legend>
-                    <Col sm={12}>
-                      <FormGroup check>
-                        <Input
-                          type="text"
-                          name="text"
-                          id="respuesta"
-                          placeholder="Tu respuesta"
-                        />
-                      </FormGroup>
-                    </Col>
-                  </FormGroup>
-                </div>
+                {/* <p>{JSON.stringify(this.state)}</p> */}
 
                 <br />
 
                 <FormGroup check row>
                   <Col className="centrado-fila">
-                    <Button
-                      color="primary"
-                     
-                    >
+                    <Button color="primary" onClick={this.onSave.bind(this)}>
                       Enviar
                     </Button>
                   </Col>
