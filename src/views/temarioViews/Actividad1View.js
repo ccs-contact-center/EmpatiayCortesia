@@ -30,7 +30,7 @@ class Actividad1View extends Component {
       pregunta5: '',
       pregunta6: '',
       id_ccs: this.Auth.getProfile().id_ccs,
-      form: 'Empatia',
+      form: 'EmpatiaCortesia',
     }
   }
 
